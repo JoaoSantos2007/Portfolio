@@ -22,3 +22,18 @@
   margin: 0px;
   font-size: clamp(40px, 8vw, 80px);
 }
+
+.hero h3{
+  margin-top: 5px;
+  color: var(--slate);
+  line-height: 0.9;
+  font-size: clamp(40px, 8vw, 80px);
+}
+
+.hero p{
+  margin: 20px 0px 0px;
+  max-width: 540px;
+  font-family: var(--font-sans);
+  font-size: var(--fz-xl);
+  line-height: 1.3;
+}

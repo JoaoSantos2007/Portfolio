@@ -2,11 +2,8 @@
 	--theme: #aa1313;
 	--transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
 	--border-radius: 4px;
-	--fz-xs: 13px;
-	--font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 	--bg-color: #1e1e1e;
 	--font-color: #e0e0e0;
-
 	--font-sans: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
 	--font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 	--fz-xxs: 12px;
@@ -36,6 +33,11 @@
 @font-face {
   font-family: 'Fira Code';
   src: url('../fonts/FiraCode/FiraCode-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('../fonts/SFMono/SFMono.ttf') format('truetype');
 }
 
 body {
