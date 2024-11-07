@@ -1,0 +1,14 @@
+#content{
+  display: block;
+  unicode-bidi: isolate;
+}
+
+main {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 300px);
+  max-width: 1600px;
+  min-height: 100vh;
+  padding: 0px 150px;
+}

@@ -1,13 +1,13 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import test from "./assets/images/logo.png"
+import Main from './components/Main/Main';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
 
-      <img src={test} style={{height: "1000px"}} alt="" />
+      <Main />
     </div>
   );
 }
