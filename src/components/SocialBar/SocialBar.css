@@ -27,8 +27,37 @@
     background-color: var(--light-slate);
 }
 
-li {
+.dVLQAC li {
   display: list-item;
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;
+}
+
+.dVLQAC li a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+}
+
+.dVLQAC li a svg {
+  width: 20px;
+  height: 20px;
+}
+
+svg.feather {
+    fill: none;
+    vertical-align: middle;
+}
+
+svg:not(:root) {
+  overflow-clip-margin: content-box;
+  overflow: hidden;
+}
+
+svg{
+  color: var(--slate);
 }
