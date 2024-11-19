@@ -1,0 +1,84 @@
+.about{
+  visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transition: all, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  max-width: 900px;
+  margin: 0px 200px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  width: 300px; /* Ajuste para o tamanho desejado */
+  height: 300px; /* Ajuste para o tamanho desejado */
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.image-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: rgba(255, 0, 0, 0.2); /* Fundo com tom esverdeado */
+  border: 2px solid var(--theme); /* Bordas com linhas verdes */
+  transition: background 0.3s ease, transform 0.3s ease, border 0.3s ease;
+}
+
+.image-overlay img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(0%) sepia(1) hue-rotate(-80deg) brightness(80%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Efeito ao passar o mouse */
+.image-container:hover .image-overlay {
+  background: transparent; /* Remove o fundo esverdeado */
+  transform: scale(1.05); /* Aplica um leve zoom */
+  border: 2px solid rgba(100, 255, 218, 1); /* Intensifica as bordas verdes */
+}
+
+.image-container:hover img {
+  filter: none; /* Remove o filtro e deixa a imagem mais nítida */
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.skills-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.skills-list li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--theme);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+}

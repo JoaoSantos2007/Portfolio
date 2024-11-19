@@ -1,10 +1,31 @@
 .navbar{
   width: 100%;
   height: 100px;
-  /* background-color: black; */
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.navbar-test{
+  transition: var(--transition);
+}
+
+.navbar-scrolled{
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  position: fixed;
+  top: 0px;
+  /* z-index: 11; */
+  height: 100px;
+  /* padding: 0px 50px; */
+  height: var(--nav-height);
+  background-color: #1e1e1e98;
+  backdrop-filter: blur(5px);
+  transition: var(--transition);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
 }
 
 .navbar__logo{
@@ -35,18 +56,19 @@
   font-family: 'Fira Code';
 }
 
-.navbar__links ol{
+.links__list{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navbar__links ol li{
+.list__item{
   margin: 0px 5px;
   counter-increment: item 1;
 }
 
-.navbar__links ol li a{
+
+.navbar__link{
   font-size: 15px;
   color: #d4d4d4;
   padding: 10px;
@@ -54,15 +76,14 @@
   transition: var(--transition);
 }
 
-.navbar__links ol li a:hover{
+.navbar__link:hover{
   color: var(--theme);
 }
 
-.navbar__links ol li a::before {
+.navbar__link::before {
   content: "0" counter(item) ".";
   margin-right: 5px;
   color: var(--theme);
-  /* font-size: ; */
   text-align: right;
 }
 
