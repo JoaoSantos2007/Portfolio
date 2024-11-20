@@ -30,7 +30,7 @@ const Navbar = () => {
   const links = [
     {id: 1, name: "About", url: "#about"},
     {id: 2, name: "Experience", url: "#experience"},
-    {id: 3, name: "Work", url: "#work"},
+    {id: 3, name: "Work", url: "#projects"},
     {id: 4, name: "Contact", url: "#contact"},
   ]
   

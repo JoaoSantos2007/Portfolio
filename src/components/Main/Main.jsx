@@ -13,7 +13,6 @@ const Main = () => {
         <About />
         <Experience />
         <Projects />
-        Main
       </main>
     </div>
   )

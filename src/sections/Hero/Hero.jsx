@@ -10,7 +10,7 @@ const Hero = () => {
       I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
       </p>
 
-      <a class="email-link" href="https://www.newline.co/courses/build-a-spotify-connected-app" target="_blank" rel="noreferrer">Check out my Sites!</a>
+      <a className="email-link" href="https://www.newline.co/courses/build-a-spotify-connected-app" target="_blank" rel="noreferrer">Check out my Sites!</a>
     </section>
   )
 }

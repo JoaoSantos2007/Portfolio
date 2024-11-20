@@ -5,15 +5,47 @@
   transition: all, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
   max-width: 900px;
   margin: 0px 200px;
+  padding: 100px 0px;
 }
 
-.inner {
+.about__info {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
 }
 
-.image-container {
+.about__texts p {
+  margin: 0px 0px 15px;
+}
+
+.about__skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.about__skills li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+}
+
+.about__skills li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color: var(--theme);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+}
+
+.about__image {
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -23,17 +55,17 @@
   cursor: pointer;
 }
 
-.image-overlay {
+.about__image-overlay {
   position: relative;
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  background: rgba(255, 0, 0, 0.2); /* Fundo com tom esverdeado */
-  border: 2px solid var(--theme); /* Bordas com linhas verdes */
+  background: rgba(255, 0, 0, 0.2);
+  border: 2px solid var(--theme);
   transition: background 0.3s ease, transform 0.3s ease, border 0.3s ease;
 }
 
-.image-overlay img {
+.about__image-overlay img {
   position: absolute;
   top: 0;
   left: 0;
@@ -46,39 +78,12 @@
 }
 
 /* Efeito ao passar o mouse */
-.image-container:hover .image-overlay {
-  background: transparent; /* Remove o fundo esverdeado */
-  transform: scale(1.05); /* Aplica um leve zoom */
-  border: 2px solid rgba(100, 255, 218, 1); /* Intensifica as bordas verdes */
+.about__image:hover .about__image-overlay {
+  background: transparent; 
+  transform: scale(1.05);
+  border: 2px solid var(--theme);
 }
 
-.image-container:hover img {
-  filter: none; /* Remove o filtro e deixa a imagem mais nítida */
-}
-
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
-  gap: 0px 10px;
-  padding: 0px;
-  margin: 20px 0px 0px;
-  overflow: hidden;
-  list-style: none;
-}
-
-.skills-list li {
-  position: relative;
-  margin-bottom: 10px;
-  padding-left: 20px;
-  font-family: var(--font-mono);
-  font-size: var(--fz-xs);
-}
-
-.skills-list li::before {
-  content: "▹";
-  position: absolute;
-  left: 0px;
-  color: var(--theme);
-  font-size: var(--fz-sm);
-  line-height: 12px;
+.about__image:hover img {
+  filter: none;
 }
