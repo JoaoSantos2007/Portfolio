@@ -1,4 +1,5 @@
 import About from '../../sections/About/About'
+import Contact from '../../sections/Contact'
 import Experience from '../../sections/Experience/Experience'
 import Hero from '../../sections/Hero/Hero'
 import Projects from '../../sections/Projects'
@@ -13,6 +14,7 @@ const Main = () => {
         <About />
         <Experience />
         <Projects />
+        <Contact />
       </main>
     </div>
   )

@@ -1,0 +1,51 @@
+.footer {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 70px;
+  padding: 15px;
+  text-align: center;
+}
+
+.fLSMpu {
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: var(--fz-xxs);
+  line-height: 1;
+}
+
+.fLSMpu a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+}
+
+.fLSMpu .github-stats {
+  margin-top: 10px;
+}
+
+.fLSMpu .github-stats > span {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px 7px;
+}
+
+.fLSMpu .github-stats svg {
+  display: inline-block;
+  margin-right: 5px;
+  width: 14px;
+  height: 14px;
+}
+
+svg.feather {
+  fill: none;
+}

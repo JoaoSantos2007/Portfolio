@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Main from './components/Main/Main';
 import SocialBar from './components/SocialBar/SocialBar';
 import EmailBar from './components/EmailBar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <EmailBar />
 
       <Main />
+      <Footer />
     </div>
   );
 }

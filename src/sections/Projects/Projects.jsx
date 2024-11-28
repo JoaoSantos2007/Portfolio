@@ -1,8 +1,6 @@
 
 import FeaturedProjects from "../FeaturedProjects"
 import OtherProjects from "../OtherProjects"
-import "./Project.css"
-
 
 const Projects = () => {
   const projects = [
@@ -26,6 +24,51 @@ const Projects = () => {
     },
     {
       featured: true,
+      name: "SmartWiki",
+      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      techList: ["html", "css", "javascript", "bootstrap", "json"],
+      externalLink: "https://webisk.com.br/smartwiki/",
+      github: "https://github.com/JoaoSantos2007/SmartWiki",
+      img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
+    },
+    {
+      featured: false,
+      name: "SmartWiki",
+      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      techList: ["html", "css", "javascript", "bootstrap", "json"],
+      externalLink: "https://webisk.com.br/smartwiki/",
+      github: "https://github.com/JoaoSantos2007/SmartWiki",
+      img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
+    },
+    {
+      featured: false,
+      name: "SmartWiki",
+      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      techList: ["html", "css", "javascript", "bootstrap", "json"],
+      externalLink: "https://webisk.com.br/smartwiki/",
+      github: "https://github.com/JoaoSantos2007/SmartWiki",
+      img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
+    },
+    {
+      featured: false,
+      name: "SmartWiki",
+      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      techList: ["html", "css", "javascript", "bootstrap", "json"],
+      externalLink: "https://webisk.com.br/smartwiki/",
+      github: "https://github.com/JoaoSantos2007/SmartWiki",
+      img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
+    },
+    {
+      featured: false,
+      name: "SmartWiki",
+      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      techList: ["html", "css", "javascript", "bootstrap", "json"],
+      externalLink: "https://webisk.com.br/smartwiki/",
+      github: "https://github.com/JoaoSantos2007/SmartWiki",
+      img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
+    },
+    {
+      featured: false,
       name: "SmartWiki",
       description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       techList: ["html", "css", "javascript", "bootstrap", "json"],
