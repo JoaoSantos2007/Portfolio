@@ -3,9 +3,8 @@ import FeaturedProjects from "../FeaturedProjects"
 import OtherProjects from "../OtherProjects"
 
 const Projects = () => {
-  const projects = [
+  const featuredProjects = [
     {
-      featured: true,
       name: "Pede Pizza",
       description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       techList: ["Vs Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
@@ -14,7 +13,6 @@ const Projects = () => {
       img: "https://raw.githubusercontent.com/JoaoSantos2007/PedePizza/main/screenshot.png"
     },
     {
-      featured: true,
       name: "NodeCraft",
       description: "A api and a website create with the aim to manage and control minecraft servers on linux",
       techList: ["Node.js", "Express", "Json", "React", "Hyper"],
@@ -23,7 +21,17 @@ const Projects = () => {
       img: "https://raw.githubusercontent.com/JoaoSantos2007/PedePizza/main/screenshot.png"
     },
     {
-      featured: true,
+      name: "SmartWiki",
+      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      techList: ["html", "css", "javascript", "bootstrap", "json"],
+      externalLink: "https://webisk.com.br/smartwiki/",
+      github: "https://github.com/JoaoSantos2007/SmartWiki",
+      img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
+    },
+  ]
+
+  const projects = [
+    {
       name: "SmartWiki",
       description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       techList: ["html", "css", "javascript", "bootstrap", "json"],
@@ -32,7 +40,6 @@ const Projects = () => {
       img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
     },
     {
-      featured: false,
       name: "SmartWiki",
       description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       techList: ["html", "css", "javascript", "bootstrap", "json"],
@@ -41,7 +48,6 @@ const Projects = () => {
       img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
     },
     {
-      featured: false,
       name: "SmartWiki",
       description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       techList: ["html", "css", "javascript", "bootstrap", "json"],
@@ -50,7 +56,6 @@ const Projects = () => {
       img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
     },
     {
-      featured: false,
       name: "SmartWiki",
       description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       techList: ["html", "css", "javascript", "bootstrap", "json"],
@@ -59,7 +64,6 @@ const Projects = () => {
       img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
     },
     {
-      featured: false,
       name: "SmartWiki",
       description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       techList: ["html", "css", "javascript", "bootstrap", "json"],
@@ -68,7 +72,14 @@ const Projects = () => {
       img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
     },
     {
-      featured: false,
+      name: "SmartWiki",
+      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      techList: ["html", "css", "javascript", "bootstrap", "json"],
+      externalLink: "https://webisk.com.br/smartwiki/",
+      github: "https://github.com/JoaoSantos2007/SmartWiki",
+      img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
+    },
+    {
       name: "SmartWiki",
       description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
       techList: ["html", "css", "javascript", "bootstrap", "json"],
@@ -80,7 +91,7 @@ const Projects = () => {
 
   return (
     <>
-      <FeaturedProjects projects={projects} />
+      <FeaturedProjects projects={featuredProjects} />
       <OtherProjects projects={projects}/>
     </>
   )

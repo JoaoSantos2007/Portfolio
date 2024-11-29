@@ -1,5 +1,6 @@
 import "./Navbar.css"
 import { useState, useEffect } from "react"
+import Logo from "../Logo/Logo"; 
 
 const Navbar = () => {
   const [navbarClass, setNavbarClass] = useState('navbar');
@@ -34,15 +35,13 @@ const Navbar = () => {
     {id: 4, name: "Contact", url: "#contact"},
   ]
   
-  const symbol = "< />"
-  
   console.log(navbarClass)
   
   return (
-    <header className={'navbar'}>
+    <header className={navbarClass}>
       <nav className="navbar__content">
         <div className="navbar__logo">
-          <a href="/">{symbol}</a>
+          <Logo />
         </div>
 
         <div className="navbar__links">

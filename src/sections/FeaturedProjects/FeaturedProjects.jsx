@@ -13,7 +13,6 @@ const FeaturedProjects = ({projects}) => {
 
       <ul className="featuredProjects__list">
         {projects.map((project, index) => (
-          project.featured &&
           <li id={`featuredProject-${index}`} className="featuredProject__element">
             <div className="featuredProject__content">
               <div>

@@ -1,0 +1,14 @@
+.wave-effect {
+  display: inline-block; /* Garante que o link se comporte como um bloco em linha */
+  text-decoration: none; /* Remove o sublinhado padrão */
+}
+
+.wave-effect span {
+  display: inline-block; /* Cada letra ocupa seu próprio espaço */
+  transition: transform 0.3s ease; /* Animação suave ao escalar */
+  transform-origin: bottom; /* Escala a partir da linha de base */
+}
+
+.wave-effect span.hovered {
+  transform: scale(1.5); /* Aumenta a escala da letra */
+}

@@ -1,15 +1,18 @@
 import "./OtherProjects.css"
+import { useState } from "react"
 import { ReactComponent as FolderIcon } from "../../assets/images/folder.svg"
 import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg"
 
 const OtherProjects = ({projects}) => {
+  const [viewFull, setViewFull] = useState(false)
+
   return (
     <section className="otherProjects">
       <h2>Other Noteworthy Projects</h2>
 
       <ul className="project__list">
-        {projects.map((project) => (
-          !project.featured &&
+        {projects.map((project, index) => (
+          (viewFull === true || index+1 <= 6) &&
           <li className="project__element">
             <div className="project__inner">
               <header>
@@ -48,8 +51,8 @@ const OtherProjects = ({projects}) => {
 
       </ul>
 
-      <button className="project__view">
-        Show More
+      <button className="project__view" onClick={() => setViewFull(!viewFull)}>
+        {viewFull ? "Show Less" : "Show More"}
       </button>
     </section>
   )
