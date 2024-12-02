@@ -1,0 +1,36 @@
+.projects {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.projects__title {
+  visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+  transition: all, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+  font-size: clamp(24px, 5vw, var(--fz-heading));
+  margin: 0px 0px 10px;
+  font-weight: 600;
+  color: var(--lightest-slate);
+  line-height: 1.1;
+}
+
+.projects__list {
+  list-style: none;
+  padding: 0px;
+  margin: 50px 0px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+  position: relative;
+}
+
+.projects .button {
+  padding: 1.25rem 1.75rem;
+  margin: 80px auto 0px;
+}

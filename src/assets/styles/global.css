@@ -28,21 +28,6 @@
 	--slate: #8892b0;
 }
 
-@font-face {
-  font-family: 'Dela Gothic';
-  src: url('../fonts/DelaGothic/DelaGothicOne-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Fira Code';
-  src: url('../fonts/FiraCode/FiraCode-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'SF Mono';
-  src: url('../fonts/SFMono/SFMono.ttf') format('truetype');
-}
-
 body {
 	margin: 0px;
 	min-height: 100%;

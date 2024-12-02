@@ -1,0 +1,23 @@
+.button{
+  display: block;
+  color: var(--theme);
+  background-color: transparent;
+  border: 1px solid var(--theme);
+  border-radius: var(--border-radius);
+  font-family: var(--font-mono);
+  line-height: 1;
+  text-decoration: none;
+  transition: var(--transition);
+  font-size: var(--fz-xs);
+  cursor: pointer;
+}
+
+.button:hover, .button:focus-visible {
+  outline: none;
+  box-shadow: 3px 3px 0 0 var(--theme);
+  transform: translate(-4px, -4px);
+}
+
+.button:after {
+  display: none !important;
+}

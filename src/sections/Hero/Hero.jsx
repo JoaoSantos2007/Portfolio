@@ -1,3 +1,4 @@
+import Button from '../../components/Button'
 import './Hero.css'
 
 const Hero = () => {
@@ -10,7 +11,7 @@ const Hero = () => {
       I’m a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products at Upstatement.
       </p>
 
-      <a className="email-link" href="https://www.newline.co/courses/build-a-spotify-connected-app" target="_blank" rel="noreferrer">Check out my Sites!</a>
+      <Button className="viewFormation" text="Check out my Courses!" href='/courses' rel="noreferrer"/>
     </section>
   )
 }

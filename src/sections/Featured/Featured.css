@@ -1,16 +1,16 @@
-.featuredProjects{
+.featured{
   margin: 0px auto;
   padding: 100px 0px;
   max-width: 1000px;
 }
 
-.featuredProjects__list {
+.featured__list {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
 
-.featuredProject__element {
+.featured__element {
   position: relative;
   display: grid;
   gap: 10px;
@@ -23,21 +23,21 @@
   transition: all, opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.featuredProject__element:not(:last-of-type) {
+.featured__element:not(:last-of-type) {
   margin-bottom: 100px;
 }
 
-.featuredProject__element:nth-of-type(2n+1) .featuredProject__content {
+.featured__element:nth-of-type(2n+1) .featured__content {
   grid-column: 7 / -1;
   text-align: right;
 }
 
-.featuredProject__content {
+.featured__content {
   position: relative;
   grid-area: 1 / 1 / -1 / 7;
 }
 
-.featuredProject__overline {
+.featured__overline {
   margin: 10px 0px;
   color: var(--theme);
   font-family: var(--font-mono);
@@ -45,14 +45,14 @@
   font-weight: 400;
 }
 
-.featuredProject__title {
+.featured__title {
   color: var(--lightest-slate);
   font-size: clamp(24px, 5vw, 28px);
   font-weight: 600;
   line-height: 1.1;
 }
 
-.featuredProjects__list a {
+.featured__list a {
   position: relative;
   z-index: 1;
   display: inline-block;
@@ -64,12 +64,12 @@
 }
 
 @media (min-width: 768px) {
-  .featuredProject__title {
+  .featured__title {
       margin: 0px 0px 20px;
   }
 }
 
-.featuredProject__description {
+.featured__description {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: var(--transition);
   position: relative;
@@ -81,12 +81,12 @@
   font-size: var(--fz-lg);
 }
 
-.featuredProject__element:nth-of-type(2n+1) .featuredProject__techList {
+.featured__element:nth-of-type(2n+1) .featured__techList {
   -webkit-box-pack: end;
   justify-content: flex-end;
 }
 
-.featuredProject__techList {
+.featured__techList {
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -96,11 +96,11 @@
   list-style: none;
 }
 
-.featuredProject__element:nth-of-type(2n+1) .featuredProject__techList li {
+.featured__element:nth-of-type(2n+1) .featured__techList li {
   margin: 0px 0px 5px 20px;
 }
 
-.featuredProject__techList li {
+.featured__techList li {
   margin: 0px 20px 5px 0px;
   color: var(--light-slate);
   font-family: var(--font-mono);
@@ -108,14 +108,14 @@
   white-space: nowrap;
 }
 
-.featuredProject__element:nth-of-type(2n+1) .featuredProject__links {
+.featured__element:nth-of-type(2n+1) .featured__links {
   -webkit-box-pack: end;
   justify-content: flex-end;
   margin-left: 0px;
   margin-right: -10px;
 }
 
-.featuredProject__links {
+.featured__links {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -125,7 +125,7 @@
   color: var(--lightest-slate);
 }
 
-.featuredProject__links a {
+.featured__links a {
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
@@ -136,16 +136,16 @@
   z-index: 1;
 }
 
-.featuredProject__links a svg {
+.featured__links a svg {
   width: 20px;
   height: 20px;
 }
 
-.featuredProject__element:nth-of-type(2n+1) .featuredProject__image {
+.featured__element:nth-of-type(2n+1) .featured__image {
   grid-column: 1 / 8;
 }
 
-.featuredProject__image {
+.featured__image {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   transition: var(--transition);
   grid-area: 1 / 6 / -1 / -1;
@@ -156,7 +156,7 @@
   cursor: pointer;
 }
 
-.featuredProject__image-overlay{
+.featured__image-overlay{
   position: relative;
   width: 100%;
   height: 100%;
@@ -166,7 +166,7 @@
   /* transition: background 0.3s ease, transform 0.3s ease, border 0.3s ease; */
 }
 
-.featuredProject__image img {
+.featured__image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -179,13 +179,13 @@
   filter: blur(2px);
 }
 
-.featuredProject__image:hover .featuredProject__image-overlay {
+.featured__image:hover .featured__image-overlay {
   background: transparent; 
   transform: scale(1.05);
   /* border: 2px solid var(--theme); */
   border: 2px;
 }
 
-.featuredProject__image:hover img {
+.featured__image:hover img {
   filter: none;
 }

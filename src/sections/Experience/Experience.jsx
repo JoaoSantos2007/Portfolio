@@ -99,7 +99,7 @@ const Experience = () => {
         <div className="jbGgbG">
           {experience.map((obj, i) => (
             index === i &&
-            <div id={`panel-${i}`} role="tabpanel" tabIndex="0" aria-labelledby="tab-0" aria-hidden="false" className="QgHxr">
+            <div key={`panel-${i}`} role="tabpanel" tabIndex="0" aria-labelledby="tab-0" aria-hidden="false" className="QgHxr">
               <h3>
                 <span>{obj.name}</span>
                 <span className="company">&nbsp;@&nbsp;<a href="https://www.upstatement.com/" className="inline-link" rel="noopener noreferrer" target="_blank">{obj.author}</a></span>

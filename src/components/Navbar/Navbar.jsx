@@ -1,6 +1,7 @@
 import "./Navbar.css"
 import { useState, useEffect } from "react"
 import Logo from "../Logo/Logo"; 
+import Button from "../Button";
 
 const Navbar = () => {
   const [navbarClass, setNavbarClass] = useState('navbar');
@@ -35,8 +36,6 @@ const Navbar = () => {
     {id: 4, name: "Contact", url: "#contact"},
   ]
   
-  console.log(navbarClass)
-  
   return (
     <header className={navbarClass}>
       <nav className="navbar__content">
@@ -53,7 +52,7 @@ const Navbar = () => {
             ))}
           </ol>
 
-          <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+          <Button text="Resume" href="/resume.pdf" rel="noopener noreferrer" />
         </div>
       </nav>
     </header>
