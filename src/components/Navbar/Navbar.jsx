@@ -12,7 +12,7 @@ const Navbar = () => {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY === 0) {
-        setNavbarClass('navbar navbar-test'); // Classe padrão no topo da página
+        setNavbarClass('navbar'); // Classe padrão no topo da página
       } else if (currentScrollY > lastScrollY) {
         setNavbarClass('navbar'); // Scroll para baixo
       } else if (currentScrollY < lastScrollY) {

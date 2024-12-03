@@ -1,14 +1,15 @@
 .navbar{
   width: 100%;
-  height: 100px;
+  height: var(--nav-height);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
-}
-
-.navbar-test{
+  position: absolute;
   transition: var(--transition);
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
 }
 
 .navbar-scrolled{
@@ -17,16 +18,11 @@
   -webkit-box-align: center;
   position: fixed;
   top: 0px;
-  /* z-index: 11; */
-  height: 100px;
-  /* padding: 0px 50px; */
-  height: var(--nav-height);
+  z-index: 1;
+  height: var(--nav-scroll-height);
   background-color: #1e1e1e98;
-  backdrop-filter: blur(5px);
-  transition: var(--transition);
-  filter: none !important;
-  pointer-events: auto !important;
-  user-select: auto !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -10px var(--navy-shadow);
 }
 
 .navbar__logo{
