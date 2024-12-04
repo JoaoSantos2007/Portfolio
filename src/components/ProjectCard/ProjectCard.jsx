@@ -1,8 +1,8 @@
-import "./Card.css"
+import "./ProjectCard.css"
 import { ReactComponent as FolderIcon } from "../../assets/images/folder.svg"
 import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg"
 
-const Card = ({project}) => {
+const ProjectCard = ({project}) => {
   return (
     <li className="card">
       <div className="card__inner">
@@ -41,4 +41,4 @@ const Card = ({project}) => {
   )
 }
 
-export default Card
+export default ProjectCard

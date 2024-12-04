@@ -34,7 +34,8 @@
   white-space: nowrap;
   font-weight: 600;
   font-size: clamp(26px, 5vw, var(--fz-heading));
-  color: var(--lightest-slate);
+  color: #d4d4d4;
+  /* color: var(--lightest-slate); */
 }
 
 .section__spacer {

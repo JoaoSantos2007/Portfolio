@@ -1,6 +1,6 @@
 import "./Projects.css"
 import { useState } from "react"
-import Card from "../../components/Card"
+import ProjectCard from "../../components/ProjectCard"
 import Button from "../../components/Button"
 
 const Projects = () => {
@@ -72,7 +72,7 @@ const Projects = () => {
       <ul className="projects__list">
         {projects.map((project, index) => (
           (viewFull === true || index+1 <= 6) &&
-          <Card key={`project-${index}`} project={project}/>
+          <ProjectCard key={`project-${index}`} project={project}/>
         ))}
       </ul>
 
