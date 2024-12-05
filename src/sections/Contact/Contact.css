@@ -24,13 +24,12 @@
 .contact .title {
   margin: 0px 0px 10px;
   font-weight: 600;
-  color: var(--lightest-slate);
+  color: var(--font-color-light);
   line-height: 1.1;
   font-size: clamp(40px, 5vw, 60px);
 }
 
 .contact p{
-  color: var(--slate);
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
   line-height: 1.3;

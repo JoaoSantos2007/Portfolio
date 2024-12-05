@@ -5,7 +5,7 @@
   left: 40px;
   right: auto;
   z-index: 10;
-  color: var(--lightest-color);
+  color: var(--font-color-medium);
 }
 
 .dVLQAC {
@@ -24,7 +24,7 @@
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background-color: var(--lightest-color);
+    background-color: var(--font-color-medium);
 }
 
 .dVLQAC li {
@@ -59,5 +59,5 @@ svg:not(:root) {
 }
 
 svg{
-  color: var(--color);
+  color: var(--font-color-medium);
 }

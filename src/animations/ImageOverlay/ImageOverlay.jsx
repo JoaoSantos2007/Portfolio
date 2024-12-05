@@ -1,7 +1,6 @@
 import './ImageOverlay.css';
 
 const ImageOverlay = ({ href, src, width="100px", height="100px" }) => {
-  console.log(height)
   return (
     <a 
       href={href}

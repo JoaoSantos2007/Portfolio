@@ -20,9 +20,9 @@
   top: 0px;
   z-index: 1;
   height: var(--nav-scroll-height);
-  background-color: #1e1e1e98;
+  background-color: var(--nav-scroll-color);
   backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px -10px var(--navy-shadow);
+  box-shadow: 0 10px 30px -10px var(--shadow);
 }
 
 .navbar__logo{
@@ -50,7 +50,7 @@
 .navbar__links{
   display: flex;
   align-items: center;
-  font-family: 'Fira Code';
+  font-family: var(--font-mono);
 }
 
 .links__list{
@@ -67,7 +67,7 @@
 
 .navbar__link{
   font-size: 15px;
-  color: var(--lightest-color);
+  color: var(--font-color-medium);
   padding: 10px;
   text-decoration: none;
   transition: var(--transition);

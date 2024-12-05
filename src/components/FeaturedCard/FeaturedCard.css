@@ -34,7 +34,7 @@
 }
 
 .featuredCard__title {
-  color: var(--lightest-color);
+  color: var(--font-color-light);
   font-size: clamp(24px, 5vw, 28px);
   font-weight: 600;
   line-height: 1.1;
@@ -51,14 +51,14 @@
 }
 
 .featuredCard__description {
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  box-shadow: 0 10px 30px -15px var(--shadow);
   transition: var(--transition);
   position: relative;
   z-index: 2;
   padding: 25px;
   border-radius: var(--border-radius);
-  background-color: var(--light-navy);
-  color: var(--lightest-color);
+  background-color: var(--bg-color-light);
+  color: var(--font-color-medium);
   font-size: var(--fz-lg);
 }
 
@@ -83,7 +83,7 @@
 
 .featuredCard__techList li {
   margin: 0px 20px 5px 0px;
-  color: var(--lightest-color);
+  color: var(--font-color-medium);
   font-family: var(--font-mono);
   font-size: var(--fz-xs);
   white-space: nowrap;
@@ -103,7 +103,7 @@
   position: relative;
   margin-top: 10px;
   margin-left: -10px;
-  color: var(--lightest-color);
+  color: var(--font-color-medium);
 }
 
 .featuredCard__links a {
@@ -132,7 +132,7 @@
 }
 
 .featuredCard__image {
-  box-shadow: 0 10px 30px -15px var(--navy-shadow);
+  box-shadow: 0 10px 30px -15px var(--shadow);
   transition: var(--transition);
   grid-area: 1 / 6 / -1 / -1;
   position: relative;

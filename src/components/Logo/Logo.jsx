@@ -1,5 +1,4 @@
 import WaveEffect from "../../animations/WaveEffect"
-import "./Logo.css"
 
 const Logo = () => {
   const symbol = "< />"

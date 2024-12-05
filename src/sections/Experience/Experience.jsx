@@ -88,8 +88,8 @@ const Experience = () => {
       <div className="inner">
         <div role="tablist" aria-label="Sites tabs" className="sAHTI">
           {experience.map((obj, i) => (
-            <button id={`tab-${i}`} role="tab" aria-selected={i === index} tabIndex={i === index ? "0" : "-1"} aria-controls={`panel-${i}`} className={i === index ? "dHdZWh" : "gHbkvF"} onClick={() => ChangeIndex(i)}> 
-              <span id={`sei-la-${i}`}>{obj.name}</span>
+            <button key={`tab-${i}`} role="tab" aria-selected={i === index} tabIndex={i === index ? "0" : "-1"} aria-controls={`panel-${i}`} className={i === index ? "dHdZWh" : "gHbkvF"} onClick={() => ChangeIndex(i)}> 
+              <span>{obj.name}</span>
             </button>
           ))}
 

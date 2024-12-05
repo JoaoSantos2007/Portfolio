@@ -12,7 +12,7 @@
 }
 
 .fLSMpu {
-  color: var(--light-slate);
+  color: var(--font-color-light);
   font-family: var(--font-mono);
   font-size: var(--fz-xxs);
   line-height: 1;

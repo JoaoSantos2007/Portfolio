@@ -5,7 +5,7 @@
   left: auto;
   right: 40px;
   z-index: 10;
-  color: var(--light-slate);
+  color: var(--font-color-medium);
 }
 
 .jJFfEJ a {
@@ -33,5 +33,5 @@
   width: 1px;
   height: 90px;
   margin: 0px auto;
-  background-color: var(--light-slate);
+  background-color: var(--font-color-medium);
 }

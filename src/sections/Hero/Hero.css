@@ -23,7 +23,7 @@
 .hero h2{
   margin: 0px;
   font-size: clamp(40px, 8vw, 80px);
-  color: #d4d4d4;
+  color: var(--font-color-light);
 }
 
 .hero h3{
@@ -39,7 +39,6 @@
   max-width: 540px;
   font-family: var(--font-sans);
   font-size: var(--fz-xl);
-  color: #B0B0B0;
   line-height: 1.3;
 }
 

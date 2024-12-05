@@ -16,7 +16,7 @@
   font-size: clamp(24px, 5vw, var(--fz-heading));
   margin: 0px 0px 10px;
   font-weight: 600;
-  color: var(--lightest-color);
+  color: var(--font-color-light);
   line-height: 1.1;
 }
 
