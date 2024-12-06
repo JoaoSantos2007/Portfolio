@@ -42,7 +42,7 @@ const Featured = () => {
 
       <ul className="featured__list">
         {projects.map((project, index) => (
-          <FeaturedCard key={`featured-${index}`} project={project}/>
+          <FeaturedCard key={`featured-${index}`} project={project} index={index} />
         ))}
       </ul>
     </section>

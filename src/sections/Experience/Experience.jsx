@@ -1,18 +1,21 @@
 import { useState } from "react"
 import "./Experience.css"
+import ExperiencePanel from "../../components/ExperiencePanel/ExperiencePanel";
+import ExperienceNav from "../../components/ExperienceNav/ExperienceNav";
 
 const Experience = () => {
-  const [index, useIndex] = useState(0);
+  const [selected, useSelected] = useState(0);
 
-  const ChangeIndex = (i) => {
-    useIndex(i)
+  const ChangeSelected = (i) => {
+    useSelected(i)
   }
 
-  const experience = [
+  const experiences = [
     {
       name: "PedePizza",
       author: "João Santos",
       devDate: "November 2022",
+      link: "webisk.com.br",
       texts: [
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
@@ -24,6 +27,7 @@ const Experience = () => {
       name: "SmartWiki",
       author: "João Santos",
       devDate: "March 2023",
+      link: "webisk.com.br",
       texts: [
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
@@ -35,6 +39,7 @@ const Experience = () => {
       name: "Phoenix",
       author: "João Santos",
       devDate: "April 2023",
+      link: "webisk.com.br",
       texts: [
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
@@ -46,6 +51,7 @@ const Experience = () => {
       name: "Snake",
       author: "João Santos",
       devDate: "January 2021",
+      link: "webisk.com.br",
       texts: [
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
@@ -57,6 +63,7 @@ const Experience = () => {
       name: "Culturafro",
       author: "João Santos",
       devDate: "September 2024",
+      link: "webisk.com.br",
       texts: [
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
@@ -68,6 +75,7 @@ const Experience = () => {
       name: "Jellifin",
       author: "Jellifin",
       devDate: "-",
+      link: "webisk.com.br",
       texts: [
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
@@ -85,34 +93,13 @@ const Experience = () => {
         <hr className="section__spacer"/>
       </div>
 
-      <div className="inner">
-        <div role="tablist" aria-label="Sites tabs" className="sAHTI">
-          {experience.map((obj, i) => (
-            <button key={`tab-${i}`} role="tab" aria-selected={i === index} tabIndex={i === index ? "0" : "-1"} aria-controls={`panel-${i}`} className={i === index ? "dHdZWh" : "gHbkvF"} onClick={() => ChangeIndex(i)}> 
-              <span>{obj.name}</span>
-            </button>
-          ))}
+      <div className="experience__inner">
+        <ExperienceNav key="experience-nav" experiences={experiences} selected={selected} ChangeSelected={ChangeSelected} />
 
-          <div className="fLsUSJ" style={{transform: `translateY(calc(${index}* var(--tab-height)))`}}></div>
-        </div>
-
-        <div className="jbGgbG">
-          {experience.map((obj, i) => (
-            index === i &&
-            <div key={`panel-${i}`} role="tabpanel" tabIndex="0" aria-labelledby="tab-0" aria-hidden="false" className="QgHxr">
-              <h3>
-                <span>{obj.name}</span>
-                <span className="company">&nbsp;@&nbsp;<a href="https://www.upstatement.com/" className="inline-link" rel="noopener noreferrer" target="_blank">{obj.author}</a></span>
-              </h3>
-              <p className="range">{obj.devDate}</p>
-              <div>
-                <ul>
-                  {obj.texts.map((text) => (
-                    <li>{text}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+        <div className="experience__texts">
+          {experiences.map((experience, index) => (
+            selected === index &&
+            <ExperiencePanel key={`experience-panel-${index}`} experience={experience} index={index} />
           ))}
         </div>
       </div>

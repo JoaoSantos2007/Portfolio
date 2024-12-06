@@ -3,7 +3,7 @@ import { ReactComponent as FolderIcon } from "../../assets/images/folder.svg"
 import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg"
 import { ReactComponent as GitHubIcon } from "../../assets/images/github.svg"
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project, index}) => {
   return (
     <li className="projectCard">
       <div className="projectCard__inner">
@@ -41,8 +41,8 @@ const ProjectCard = ({project}) => {
     
         <footer>
           <ul className="projectCard__techList">
-            {project.techList.map(tech => (
-              <li>{tech}</li>
+            {project.techList.map((tech, techIndex) => (
+              <li key={`projectCard-${index}-tech-${techIndex}`}>{tech}</li>
             ))}
           </ul>
         </footer>

@@ -71,7 +71,7 @@ const Projects = () => {
       <ul className="projects__list">
         {projects.map((project, index) => (
           (viewFull === true || index+1 <= 6) &&
-          <ProjectCard key={`project-${index}`} project={project}/>
+          <ProjectCard key={`project-${index}`} project={project} index={index} />
         ))}
       </ul>
 

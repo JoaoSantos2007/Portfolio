@@ -3,7 +3,7 @@ import { ReactComponent as GitHubIcon } from "../../assets/images/github.svg";
 import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg";
 import ImageOverlay from "../../animations/ImageOverlay/ImageOverlay";
 
-const FeaturedCard = ({ project }) => {
+const FeaturedCard = ({ project, index }) => {
   return (
     <li className="featuredCard">
       <div className="featuredCard__content">
@@ -19,8 +19,8 @@ const FeaturedCard = ({ project }) => {
         </div>
 
         <ul className="featuredCard__techList">
-          {project.techList.map((tech) => (
-            <li>{tech}</li>
+          {project.techList.map((tech, techIndex) => (
+            <li key={`featured-${index}-tech-${techIndex}`}>{tech}</li>
           ))}
         </ul>
 
