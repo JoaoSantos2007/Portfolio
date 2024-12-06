@@ -44,9 +44,9 @@ const Navbar = () => {
         </div>
 
         <div className="navbar__links">
-          <ol className="links__list">
+          <ol className="navbar__list">
             {links.map((link, index) => (
-              <li className="list__item" key={link.id}>
+              <li className="navbar__item" key={link.id}>
                 <a className="navbar__link" href={link.url} style={{transitionDelay: `${index * 10}ms`}}>{link.name}</a>
               </li> 
             ))}

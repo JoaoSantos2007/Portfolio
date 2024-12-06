@@ -53,17 +53,16 @@
   font-family: var(--font-mono);
 }
 
-.links__list{
+.navbar__list{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.list__item{
+.navbar__item{
   margin: 0px 5px;
   counter-increment: item 1;
 }
-
 
 .navbar__link{
   font-size: 15px;

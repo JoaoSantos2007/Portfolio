@@ -1,4 +1,4 @@
-.jSIwrL {
+.emailBar {
   width: 40px;
   position: fixed;
   bottom: 0px;
@@ -8,7 +8,16 @@
   color: var(--font-color-medium);
 }
 
-.jJFfEJ a {
+.emailBar__text::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--font-color-medium);
+}
+
+.emailBar__link {
   margin: 20px auto;
   padding: 10px;
   font-family: var(--font-mono);
@@ -17,21 +26,15 @@
   letter-spacing: 0.1em;
   -webkit-writing-mode: vertical-rl;
   writing-mode: vertical-rl;
-
-    display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    color: inherit;
-    position: relative;
-    transition: var(--transition);
-
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
 }
 
-.jJFfEJ::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 90px;
-  margin: 0px auto;
-  background-color: var(--font-color-medium);
+.emailBar__link:hover{
+  color: var(--theme);
+  transform: translateY(-3px);
 }

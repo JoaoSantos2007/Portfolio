@@ -1,4 +1,4 @@
-.hOvuuP {
+.socialBar {
   width: 40px;
   position: fixed;
   bottom: 0px;
@@ -8,7 +8,7 @@
   color: var(--font-color-medium);
 }
 
-.dVLQAC {
+.socialBar__list {
   display: flex;
   flex-direction: column;
   -webkit-box-align: center;
@@ -18,7 +18,7 @@
   list-style: none;
 }
 
-.dVLQAC::after {
+.socialBar__list::after {
     content: "";
     display: block;
     width: 1px;
@@ -27,13 +27,13 @@
     background-color: var(--font-color-medium);
 }
 
-.dVLQAC li {
+.socialBar__element {
   display: list-item;
   text-align: -webkit-match-parent;
   unicode-bidi: isolate;
 }
 
-.dVLQAC li a {
+.socialBar__link {
   padding: 10px;
   display: inline-block;
   text-decoration: none;
@@ -43,21 +43,24 @@
   transition: var(--transition);
 }
 
-.dVLQAC li a svg {
+.socialBar__link svg {
   width: 20px;
   height: 20px;
+  transition: var(--transition);
+  color: var(--font-color-medium);
 }
 
-svg.feather {
+.socialBar__link:hover svg{
+  color: var(--theme);
+  transform: translateY(-3px);
+}
+
+.socialBar__link svg.feather {
     fill: none;
     vertical-align: middle;
 }
 
-svg:not(:root) {
+.socialBar__link svg:not(:root) {
   overflow-clip-margin: content-box;
   overflow: hidden;
-}
-
-svg{
-  color: var(--font-color-medium);
 }

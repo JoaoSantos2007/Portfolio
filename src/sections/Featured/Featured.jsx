@@ -1,31 +1,34 @@
 import "./Featured.css"
 import FeaturedCard from "../../components/FeaturedCard/FeaturedCard";
+import PedePizzaImg from "../../assets/images/pedepizza.png"
+import NodeCraftImg from "../../assets/images/nodecraft.jpg"
+import SmartWikiImg from "../../assets/images/smartwiki.png"
 
 const Featured = () => {
   const projects = [
     {
       name: "Pede Pizza",
-      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-      techList: ["Vs Code", "Sublime Text", "Atom", "iTerm2", "Hyper"],
+      description: "PedePizza is a sleek and responsive pizza-ordering platform powered by Node.js, Express, and a custom RESTful API. Built with HTML, CSS, and JavaScript, it offers a delightful user experience for browsing menus, managing orders, and customizing your cart. Perfectly designed to work across all devices, PedePizza combines functionality and style for an effortless pizza-ordering experience.",
+      techList: ["Node.js", "API", "Express", "Html", "Css", "Javascript"],
       externalLink: "https://webisk.com.br/pizza",
       github: "https://github.com/JoaoSantos2007/PedePizza",
-      img: "https://raw.githubusercontent.com/JoaoSantos2007/PedePizza/main/screenshot.png"
+      img: PedePizzaImg
     },
     {
       name: "NodeCraft",
-      description: "A api and a website create with the aim to manage and control minecraft servers on linux",
-      techList: ["Node.js", "Express", "Json", "React", "Hyper"],
-      externalLink: "https://webisk.com.br/pizza",
+      description: "A powerful API built with Node.js to create, manage, and control Minecraft servers on Linux. NodeCraft simplifies server setup, editing, and runtime management with a focus on efficiency and automation.",
+      techList: ["Node.js", "Express", "Json", "Sqlite", "Linux"],
+      externalLink: "https://github.com/JoaoSantos2007/Nodecraft",
       github: "https://github.com/JoaoSantos2007/Nodecraft",
-      img: "https://raw.githubusercontent.com/JoaoSantos2007/PedePizza/main/screenshot.png"
+      img: NodeCraftImg
     },
     {
       name: "SmartWiki",
-      description: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      description: "A modern, responsive wiki platform built with HTML, CSS, JavaScript, and Bootstrap, focusing on smart cities and smart home products. Explore insightful articles, guides, and a dedicated store for smart home devices. Perfectly optimized for seamless browsing across all devices.",
       techList: ["Html", "Css", "Javascript", "Bootstrap", "Json"],
       externalLink: "https://webisk.com.br/smartwiki/",
       github: "https://github.com/JoaoSantos2007/SmartWiki",
-      img: "https://raw.githubusercontent.com/JoaoSantos2007/SmartWiki/main/screenshot.png"
+      img: SmartWikiImg
     },
   ]
 

@@ -8,17 +8,15 @@ import './Main.css'
 
 const Main = () => {
   return (
-    <div id='content'>
-      <main className='main'>
-        <Hero />
+    <main className='main'>
+      <Hero />
 
-        <About />
-        <Experience />
-        <Featured />
-        <Projects />
-        <Contact />
-      </main>
-    </div>
+      <About />
+      <Experience />
+      <Featured />
+      <Projects />
+      <Contact />
+    </main>
   )
 }
 

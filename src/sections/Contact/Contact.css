@@ -5,13 +5,12 @@
   padding: 100px 0px;
 }
 
-.contact .overline {
+.contact__overline {
   display: block;
   color: var(--theme);
   font-family: var(--font-mono);
-  font-size: var(--fz-md);
+  font-size: var(--fz-lg);
   font-weight: 400;
-  
   -webkit-box-align: center;
   position: relative;
   margin: 10px 0px 40px;
@@ -21,7 +20,7 @@
   font-family: var(--font-sans);
 }
 
-.contact .title {
+.contact__title {
   margin: 0px 0px 10px;
   font-weight: 600;
   color: var(--font-color-light);

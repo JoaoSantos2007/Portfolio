@@ -11,14 +11,14 @@
   text-align: center;
 }
 
-.fLSMpu {
+.footer__inner {
   color: var(--font-color-light);
   font-family: var(--font-mono);
   font-size: var(--fz-xxs);
   line-height: 1;
 }
 
-.fLSMpu a {
+.footer__link {
   padding: 10px;
   display: inline-block;
   text-decoration: none;
@@ -28,24 +28,29 @@
   transition: var(--transition);
 }
 
-.fLSMpu .github-stats {
+.footer__link:hover {
+  color: var(--theme);
+}
+
+.footer__stats {
   margin-top: 10px;
 }
 
-.fLSMpu .github-stats > span {
+.footer__stats > span {
   display: inline-flex;
   -webkit-box-align: center;
   align-items: center;
   margin: 0px 7px;
 }
 
-.fLSMpu .github-stats svg {
+.footer__stats svg {
   display: inline-block;
   margin-right: 5px;
   width: 14px;
   height: 14px;
+  color: inherit;
 }
 
-svg.feather {
+.footer__stats svg.feather {
   fill: none;
 }

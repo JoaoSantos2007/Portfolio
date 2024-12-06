@@ -1,4 +1,4 @@
-.card{
+.projectCard{
   transition: 0.25s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
   visibility: visible;
   opacity: 1;
@@ -7,12 +7,12 @@
   cursor: default;
 }
 
-.card a{
+.projectCard a{
   position: relative;
   z-index: 1;
 }
 
-.card__inner {
+.projectCard__inner {
   box-shadow: 0 10px 30px -15px var(--shadow);
   display: flex;
   -webkit-box-pack: justify;
@@ -27,9 +27,18 @@
   background-color: var(--bg-color-light);
   transition: var(--transition);
   overflow: auto;
+  cursor: pointer;
 }
 
-.card__top {
+.projectCard__inner:hover {
+  transform: translateY(-7.5px);
+}
+
+.projectCard__inner:hover .projectCard__title{
+  color: var(--theme);
+}
+
+.projectCard__top {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -45,7 +54,7 @@
   color: var(--theme);
 }
 
-.card__links{
+.projectCard__links{
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -53,7 +62,7 @@
   color: var(--font-color-light);
 }
 
-.card__links a {
+.projectCard__links a {
   display: flex;
   -webkit-box-pack: center;
   justify-content: center;
@@ -62,20 +71,25 @@
   padding: 5px 7px;
 }
 
-.card__externalLink {
+.projectCard__link {
   width: 22px;
   height: 22px;
   margin-top: -4px;
   color: var(--font-color-light);
+  transition: var(--transition);
 }
 
-.card__title {
+.projectCard__link:hover {
+  color: var(--theme);
+}
+
+.projectCard__title {
   margin: 0px 0px 10px;
   color: var(--font-color-light);
   font-size: var(--fz-xxl);
 }
 
-.card__title a {
+.projectCard__title a {
   position: static;
   display: inline-block;
   text-decoration: none;
@@ -86,7 +100,7 @@
   font-weight: 600;
 }
 
-.card__title a::before {
+.projectCard__title a::before {
   content: "";
   display: block;
   position: absolute;
@@ -97,12 +111,12 @@
   left: 0px;
 }
 
-.card__description {
+.projectCard__description {
   color: var(--font-color-medium);
   font-size: 17px;
 }
 
-.card__techList {
+.projectCard__techList {
   display: flex;
   align-items: flex-end;
   -webkit-box-flex: 1;
@@ -113,11 +127,11 @@
   list-style: none;
 }
 
-.card__techList li:not(:last-of-type) {
+.projectCard__techList li:not(:last-of-type) {
   margin-right: 15px;
 }
 
-.card__techList li {
+.projectCard__techList li {
   font-family: var(--font-mono);
   font-size: var(--fz-xxs);
   line-height: 1.75;

@@ -6,26 +6,26 @@ import { ReactComponent as LinkedinIcon } from "../../assets/images/linkedin.svg
 
 const SocialBar = () => {
   return (
-    <div orientation="left" className="side__StyledSideElement-sc-1duznzb-0 hOvuuP">
-      <ul className="social__StyledSocialList-anu6nt-0 dVLQAC fade-enter-done">
-        <li>
-          <a href="https://github.com/JoaoSantos2007" aria-label="GitHub" target="_blank" rel="noreferrer">
-            <GitHubIcon />
+    <div orientation="left" className="socialBar">
+      <ul className="socialBar__list">
+        <li className="socialBar__element">
+          <a className="socialBar__link" href="https://github.com/JoaoSantos2007" aria-label="GitHub" target="_blank" rel="noreferrer">
+            <GitHubIcon className="socialBar__svg"/>
           </a>
         </li>
-        <li>
-          <a href="https://www.instagram.com/joaos.santos7" aria-label="Instagram" target="_blank" rel="noreferrer">
-            <InstagramIcon />
+        <li className="socialBar__element">
+          <a className="socialBar__link" href="https://www.instagram.com/joaos.santos7" aria-label="Instagram" target="_blank" rel="noreferrer">
+            <InstagramIcon className="socialBar__svg"/>
           </a>
         </li>
-        <li>
-          <a href="https://twitter.com/bchiang7" aria-label="Twitter" target="_blank" rel="noreferrer">
-            <TwitterIcon />
+        <li className="socialBar__element">
+          <a className="socialBar__link" href="https://twitter.com/bchiang7" aria-label="Twitter" target="_blank" rel="noreferrer">
+            <TwitterIcon className="socialBar__svg"/>
           </a>
         </li>
-        <li>
-          <a href="https://www.linkedin.com/in/bchiang7" aria-label="Linkedin" target="_blank" rel="noreferrer">
-            <LinkedinIcon />
+        <li className="socialBar__element">
+          <a className="socialBar__link" href="https://www.linkedin.com/in/bchiang7" aria-label="Linkedin" target="_blank" rel="noreferrer">
+            <LinkedinIcon className="socialBar__svg"/>
           </a>
         </li>
       </ul>
