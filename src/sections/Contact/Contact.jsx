@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className="contact">
       <h2 className="contact__overline">04. What’s Next?</h2>
       <h2 className="contact__title">Get In Touch</h2>
-      <p>Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+      <p>Although I’m currently focused on my studies, I’m open to taking on freelance projects. Feel free to reach out if you have an opportunity or just want to connect, I’ll do my best to respond!</p>
 
       <Button text="Say Hello" href="mailto:joao.santos.2007sp@gmail.com" />
     </section>
