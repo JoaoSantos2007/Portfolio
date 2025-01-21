@@ -27,8 +27,7 @@ function WaveEffect({ text }) {
   };
 
   return (
-    <a
-      href="/"
+    <p
       className="wave-effect"
       onMouseEnter={handleMouseEnter}
     >
@@ -40,7 +39,7 @@ function WaveEffect({ text }) {
           {char === ' ' ? '\u00A0' : char}
         </span>
       ))}
-    </a>
+    </p>
   );
 }
 

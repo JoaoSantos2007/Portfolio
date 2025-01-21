@@ -34,7 +34,7 @@
   text-decoration: none;
 }
 
-.navbar__logo a{
+.navbar__logo p{
   color: var(--theme);
   text-decoration: none;
 }
@@ -70,6 +70,7 @@
   padding: 10px;
   text-decoration: none;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .navbar__link:hover{

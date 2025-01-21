@@ -7,15 +7,15 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer__inner">
         <a className="footer__link" href="https://github.com/JoaoSantos2007/Portfolio" rel="noopener noreferrer" target="_blank">
-          <div>Designed by Brittany Chiang &amp; Built by João Santos</div>
+          <div>Developed by João Pedro Tomaz dos Santos</div>
           <div className="footer__stats">
             <span>
               <FavoriteIcon />
-              <span>7,606</span>
+              <span>0</span>
             </span>
             <span>
               <BranchIcon />
-              <span>3,789</span>
+              <span>0</span>
             </span>
           </div>
         </a>

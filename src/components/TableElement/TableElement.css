@@ -1,0 +1,43 @@
+.TableElement:hover{
+  background-color: var(--bg-color-light);
+}
+
+.TableElement__year{
+  color: var(--theme);
+  font-family: var(--font-mono);
+  font-size: var(--fz-md);
+  font-weight: 400;
+  padding-right: 20px;
+}
+
+.TableElement__title{
+  padding-top: 15px;
+  padding-right: 20px;
+  color: var(--lightest-slate);
+  font-size: var(--fz-xl);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.TableElement__school{
+  font-size: var(--fz-lg);
+  white-space: nowrap;
+}
+
+.TableElement__links{
+  min-width: 100px;
+}
+
+.TableElement__externalLink{
+  text-decoration: none;
+  color: inherit;
+}
+
+.TableElement__externalLink:hover svg{
+  color: var(--theme);
+}
+
+.TableElement__externalLink svg{
+  width: 20px;
+  height: 20px;
+}

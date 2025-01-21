@@ -1,6 +1,8 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Main from './components/Main/Main';
+import Main from './pages/Main/Main';
+import Achievements from './pages/Achievements/Achievements';
 import SocialBar from './components/SocialBar/SocialBar';
 import EmailBar from './components/EmailBar';
 import Footer from './components/Footer';
@@ -8,12 +10,19 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <SocialBar />
-      <EmailBar />
+      <BrowserRouter>
+        <Navbar />
+        <SocialBar />
+        <EmailBar />
 
-      <Main />
-      <Footer />
+        <Routes>
+          <Route path='/' element={<Main />}/>
+          <Route path='/achievements' element={<Achievements />}/>
+        </Routes>
+
+        
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
