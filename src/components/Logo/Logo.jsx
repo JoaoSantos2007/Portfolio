@@ -1,11 +1,9 @@
-import WaveEffect from "../../animations/WaveEffect"
+import WaveEffect from "../../animations/WaveEffect/WaveEffect.jsx";
 
 const Logo = () => {
-  const symbol = "< />"
-  
-  return (
-    <WaveEffect text={symbol} />
-  )
-}
+  const symbol = "< />";
 
-export default Logo
+  return <WaveEffect text={symbol} />;
+};
+
+export default Logo;

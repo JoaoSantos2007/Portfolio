@@ -1,14 +1,14 @@
-import About from '../../sections/About/About'
-import Contact from '../../sections/Contact'
-import Experience from '../../sections/Experience/Experience'
-import Featured from '../../sections/Featured/Featured'
-import Hero from '../../sections/Hero/Hero'
-import Projects from '../../sections/Projects'
-import './Main.css'
+import About from "../../layouts/About/About.jsx";
+import Contact from "../../layouts/Contact/Contact.jsx";
+import Experience from "../../layouts/Experience/Experience.jsx";
+import Featured from "../../layouts/Featured/Featured.jsx";
+import Hero from "../../layouts/Hero/Hero.jsx";
+import Projects from "../../layouts/Projects/Projects.jsx";
+import "./Main.css";
 
 const Main = () => {
   return (
-    <main className='main'>
+    <main className="main">
       <Hero />
 
       <About />
@@ -17,7 +17,7 @@ const Main = () => {
       <Projects />
       <Contact />
     </main>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

@@ -1,9 +1,10 @@
-import "./ProjectCard.css"
-import { ReactComponent as FolderIcon } from "../../assets/images/folder.svg"
-import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg"
-import { ReactComponent as GitHubIcon } from "../../assets/images/github.svg"
+import "./ProjectCard.css";
+import { ReactComponent as FolderIcon } from "../../assets/images/folder.svg";
+import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg";
+import { ReactComponent as GitHubIcon } from "../../assets/images/github.svg";
+import PropTypes from "prop-types";
 
-const ProjectCard = ({project, index}) => {
+const ProjectCard = ({ project, index }) => {
   return (
     <li className="projectCard">
       <div className="projectCard__inner">
@@ -13,32 +14,46 @@ const ProjectCard = ({project, index}) => {
               <FolderIcon />
             </div>
             <div className="projectCard__links">
-              {project.github && 
-                <a href={project.github} aria-label="Gihub Link" target="_blank" rel="noopener noreferrer">
-                  <GitHubIcon className="projectCard__link"/>
+              {project.github && (
+                <a
+                  href={project.github}
+                  aria-label="Gihub Link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GitHubIcon className="projectCard__link" />
                 </a>
-              }
-              {
-                project.externalLink &&
-                <a href={project.externalLink} aria-label="External Link" target="_blank" rel="noopener noreferrer">
-                  <ExternalIcon className="projectCard__link"/>
+              )}
+              {project.externalLink && (
+                <a
+                  href={project.externalLink}
+                  aria-label="External Link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ExternalIcon className="projectCard__link" />
                 </a>
-              }
-
+              )}
             </div>
           </div>
-      
+
           <h3 className="projectCard__title">
-            <a href={project.externalLink ? project.externalLink : project.github} target="_blank" rel="noopener noreferrer">
+            <a
+              href={
+                project.externalLink ? project.externalLink : project.github
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {project.name}
             </a>
           </h3>
-      
+
           <div className="projectCard__description">
             <p>{project.description}</p>
           </div>
         </header>
-    
+
         <footer>
           <ul className="projectCard__techList">
             {project.techList.map((tech, techIndex) => (
@@ -48,7 +63,17 @@ const ProjectCard = ({project, index}) => {
         </footer>
       </div>
     </li>
-  )
-}
+  );
+};
+ProjectCard.propTypes = {
+  project: PropTypes.shape({
+    github: PropTypes.string,
+    externalLink: PropTypes.string,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    techList: PropTypes.arrayOf(PropTypes.string).isRequired,
+  }).isRequired,
+  index: PropTypes.number.isRequired,
+};
 
-export default ProjectCard
+export default ProjectCard;

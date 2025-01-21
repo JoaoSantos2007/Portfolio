@@ -1,15 +1,16 @@
-import TableElement from '../../components/TableElement'
-import courses from '../../assets/jsons/courses.json'
-import './Achievements.css'
+import TableElement from "../../components/TableElement/TableElement.jsx";
+import courses from "../../assets/docs/courses.json";
+import "./Achievements.css";
 
 const Achievements = () => {
-
   return (
-    <main className='achievements'>
-      <h1 className='achievements__title'>Achievements</h1>
-      <p className="achievements__subtitle">A big list of things I’ve worked on</p>
+    <main className="achievements">
+      <h1 className="achievements__title">Achievements</h1>
+      <p className="achievements__subtitle">
+        A big list of things I’ve worked on
+      </p>
 
-      <table className='achievements__table'>
+      <table className="achievements__table">
         <thead>
           <tr>
             <th>Year</th>
@@ -19,18 +20,21 @@ const Achievements = () => {
           </tr>
         </thead>
         <tbody>
-          {courses && courses.map((course, index) => <TableElement
-            key={index} 
-            year={course.year}
-            name={course.name}
-            school={course.school}
-            link={course.link}
-            index={index}
-          />)}
+          {courses &&
+            courses.map((course, index) => (
+              <TableElement
+                key={index}
+                year={course.year}
+                name={course.name}
+                school={course.school}
+                link={course.link}
+                index={index}
+              />
+            ))}
         </tbody>
       </table>
     </main>
-  )
-}
+  );
+};
 
-export default Achievements
+export default Achievements;

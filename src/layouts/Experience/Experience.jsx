@@ -1,5 +1,5 @@
-import { useState } from "react"
-import "./Experience.css"
+import { useState } from "react";
+import "./Experience.css";
 import ExperiencePanel from "../../components/ExperiencePanel/ExperiencePanel";
 import ExperienceNav from "../../components/ExperienceNav/ExperienceNav";
 
@@ -7,8 +7,8 @@ const Experience = () => {
   const [selected, useSelected] = useState(0);
 
   const ChangeSelected = (i) => {
-    useSelected(i)
-  }
+    useSelected(i);
+  };
 
   const experiences = [
     {
@@ -20,7 +20,7 @@ const Experience = () => {
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
         "oasidf sadlkj asdçlkçjbqasd sadlmnf çalksdff n sadfonb lia~sd",
-        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf "
+        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf ",
       ],
     },
     {
@@ -32,7 +32,7 @@ const Experience = () => {
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
         "oasidf sadlkj asdçlkçjbqasd sadlmnf çalksdff n sadfonb lia~sd",
-        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf "
+        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf ",
       ],
     },
     {
@@ -44,7 +44,7 @@ const Experience = () => {
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
         "oasidf sadlkj asdçlkçjbqasd sadlmnf çalksdff n sadfonb lia~sd",
-        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf "
+        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf ",
       ],
     },
     {
@@ -56,7 +56,7 @@ const Experience = () => {
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
         "oasidf sadlkj asdçlkçjbqasd sadlmnf çalksdff n sadfonb lia~sd",
-        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf "
+        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf ",
       ],
     },
     {
@@ -68,7 +68,7 @@ const Experience = () => {
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
         "oasidf sadlkj asdçlkçjbqasd sadlmnf çalksdff n sadfonb lia~sd",
-        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf "
+        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf ",
       ],
     },
     {
@@ -80,32 +80,42 @@ const Experience = () => {
         "sdoifiu hsadgfiyhu g sadiuhgf uisayhdiufahjk sdg fsd kajsdghfi uaskdjh",
         "ljksadhnfjkh aksjdhfkj hksdajhf klkajsdh asekljhdfa akjsdhf",
         "oasidf sadlkj asdçlkçjbqasd sadlmnf çalksdff n sadfonb lia~sd",
-        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf "
+        "lksdanfoj asdkjlfh jkasldjkhf lajksdhfasçldkhjf aslkjdf ",
       ],
     },
-  ]
+  ];
 
   return (
     <section id="experience" className="experience">
       <div className="section__header">
         <p className="section__number">02.</p>
         <h2 className="section__title">View my Sites</h2>
-        <hr className="section__spacer"/>
+        <hr className="section__spacer" />
       </div>
 
       <div className="experience__inner">
-        <ExperienceNav key="experience-nav" experiences={experiences} selected={selected} ChangeSelected={ChangeSelected} />
+        <ExperienceNav
+          key="experience-nav"
+          experiences={experiences}
+          selected={selected}
+          ChangeSelected={ChangeSelected}
+        />
 
         <div className="experience__texts">
-          {experiences.map((experience, index) => (
-            selected === index &&
-            <ExperiencePanel key={`experience-panel-${index}`} experience={experience} index={index} />
-          ))}
+          {experiences.map(
+            (experience, index) =>
+              selected === index && (
+                <ExperiencePanel
+                  key={`experience-panel-${index}`}
+                  experience={experience}
+                  index={index}
+                />
+              ),
+          )}
         </div>
       </div>
-
     </section>
-  )
-}
+  );
+};
 
-export default Experience
+export default Experience;
