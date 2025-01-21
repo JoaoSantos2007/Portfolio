@@ -64,3 +64,9 @@
   overflow-clip-margin: content-box;
   overflow: hidden;
 }
+
+@media (max-width: 1080px) {
+  .socialBar {
+    left: 20px;
+  }
+}

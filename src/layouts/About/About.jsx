@@ -1,6 +1,5 @@
 import "./About.css";
 import myPhoto from "../../assets/images/me.png";
-import ImageOverlay from "../../animations/ImageOverlay/ImageOverlay.jsx";
 
 const About = () => {
   return (
@@ -52,12 +51,9 @@ const About = () => {
         </div>
 
         <div className="about__image">
-          <ImageOverlay
-            href="https://github.com/JoaoSantos2007"
-            src={myPhoto}
-            width="300px"
-            height="300px"
-          />
+          <a href="https://github.com/JoaoSantos2007">
+            <img src={myPhoto} alt="My photo" />
+          </a>
         </div>
       </div>
     </section>

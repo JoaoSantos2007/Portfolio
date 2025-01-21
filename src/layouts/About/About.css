@@ -50,8 +50,14 @@
   display: inline-block;
   border-radius: var(--border-radius);
   cursor: pointer;
+  max-width: 300px;
+  max-height: 300px;
+  width: 100%;
+  height: auto;
 }
 
-.about__image .imageOverlay__container{
+.about__image img {
+  width: 100%;
+  height: auto;
   border-radius: var(--border-radius);
 }

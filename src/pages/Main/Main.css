@@ -41,3 +41,9 @@
   margin-left: 20px;
   background-color: var(--font-color-light);
 }
+
+@media screen and (max-width: 1080px) {
+  .main {
+    padding: 0px 100px;
+  }
+}

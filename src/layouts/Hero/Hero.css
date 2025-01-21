@@ -49,3 +49,9 @@
   margin-top: 50px;
 }
 
+@media (max-height: 700px) and (min-width: 700px), (max-width: 360px) {
+  .hero{
+      height: auto;
+      padding-top: var(--nav-height);
+  }
+}

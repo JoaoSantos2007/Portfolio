@@ -38,3 +38,9 @@
   color: var(--theme);
   transform: translateY(-3px);
 }
+
+@media screen and (max-width: 1080px) {
+  .emailBar{
+    right: 20px;
+  }
+}
