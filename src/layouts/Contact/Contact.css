@@ -40,3 +40,16 @@
   display: inline-block;
   margin-top: 50px;
 }
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 0px;
+    margin: 0px auto 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 60px 0px;
+  }
+}

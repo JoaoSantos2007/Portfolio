@@ -1,7 +1,10 @@
 import "./ExperienceNav.css";
 import PropTypes from "prop-types";
+import useSize from "../../hooks/useSize.jsx";
 
 const ExperienceNav = ({ experiences, selected, ChangeSelected }) => {
+  const { width } = useSize();
+
   return (
     <div role="tablist" aria-label="Experiences tabs" className="experienceNav">
       {experiences.map((experience, index) => (
@@ -21,7 +24,10 @@ const ExperienceNav = ({ experiences, selected, ChangeSelected }) => {
       <div
         className="experienceNav__scroll"
         style={{
-          transform: `translateY(calc(${selected}* var(--tab-height)))`,
+          transform:
+            width <= 600
+              ? `translateX(calc(${selected}* var(--tab-width)))`
+              : `translateY(calc(${selected}* var(--tab-height)))`,
         }}
       ></div>
     </div>

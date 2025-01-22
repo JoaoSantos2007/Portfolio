@@ -3,11 +3,13 @@ import { useState, useEffect } from "react";
 import Logo from "../Logo/Logo.jsx";
 import Button from "../Button/Button.jsx";
 import { Link, useNavigate } from "react-router-dom";
+import useSize from "../../hooks/useSize.jsx";
 
 const Navbar = () => {
   const [navbarClass, setNavbarClass] = useState("navbar");
   const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
+  const { width } = useSize();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,6 +46,10 @@ const Navbar = () => {
       document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
     }, 0);
   };
+
+  if (width <= 768) {
+    return;
+  }
 
   return (
     <header className={navbarClass}>

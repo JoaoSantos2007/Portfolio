@@ -61,3 +61,25 @@
   height: auto;
   border-radius: var(--border-radius);
 }
+
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 0px;
+  }
+
+  .about__info {
+    display: block;
+  }
+  
+  .about__image {
+    display: block;
+    margin: 50px auto 0px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 60px 0px;
+  }
+}

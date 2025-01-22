@@ -30,6 +30,11 @@
   cursor: pointer;
 }
 
+.experienceNav__btn:hover{
+  color: var(--theme);
+  background-color: var(--bg-color-light);
+}
+
 .experienceNav__btn-selected {
   color: var(--theme);
 }
@@ -44,4 +49,43 @@
   border-radius: var(--border-radius);
   background: var(--theme);
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}
+
+@media (max-width: 768px) {
+  .experienceNav__btn {
+      padding: 0px 15px 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .experienceNav {
+    display: flex;
+    overflow-x: auto;
+    width: calc(100% + 100px);
+    padding-left: 50px;
+    margin-left: -50px;
+    margin-bottom: 30px;
+  }
+
+  .experienceNav__btn {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 120px;
+    padding: 0px 15px;
+    border-left: 0px;
+    border-bottom: 2px solid white;
+    text-align: center;
+  }
+
+  .experienceNav__scroll {
+    top: auto;
+    bottom: 0px;
+    width: 100%;
+    max-width: var(--tab-width);
+    height: 2px;
+    margin-left: 50px;
+  }
 }

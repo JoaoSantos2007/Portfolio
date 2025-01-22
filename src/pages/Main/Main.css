@@ -47,3 +47,15 @@
     padding: 0px 100px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    padding: 0px 25px;
+  }
+}

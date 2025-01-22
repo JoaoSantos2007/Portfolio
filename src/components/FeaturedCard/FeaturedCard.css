@@ -144,20 +144,79 @@
   border-radius: var(--border-radius);
 }
 
-@media (min-width: 768px) {
-  .featuredCard__title {
-    margin: 0px 0px 20px;
-  }
-}
-
 @media (max-width: 1080px) {
   .featuredCard:nth-of-type(2n+1) .featuredCard__content {
-      grid-column: 5 / -1;
+    grid-column: 5 / -1;
   }
 }
 
-@media (max-width: 1080px) {
+.featuredCard .featuredCard__content {
+  grid-column: 1 / 9;
+}
+
+@media screen and (max-width: 768px) {
+  .featuredCard:not(:last-of-type) {
+    margin-bottom: 70px;
+  }
+  
+  .featuredCard:nth-of-type(2n+1) .featuredCard__content {
+      grid-column: 1 / -1;
+      padding: 40px 40px 30px;
+      text-align: left;
+  }
+
   .featuredCard .featuredCard__content {
-      grid-column: 1 / 9;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    grid-column: 1 / -1;
+    padding: 40px 40px 30px;
+    z-index: 5;
+  }
+
+  .featuredCard__title a{
+    position: static;
+  }
+
+  .featuredCard__description {
+    padding: 20px 0px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .featuredCard:nth-of-type(2n+1) .featuredCard__techList {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+  }
+
+  .featuredCard__techList {
+    margin: 10px 0px;
+  }
+
+  .featuredCard:nth-of-type(2n+1) .featuredCard__techList li {
+    margin: 0px 10px 5px 0px;
+  }
+
+  .featuredCard:nth-of-type(2n+1) .featuredCard__links {
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin-left: -10px;
+    margin-right: 0px;
+  }
+
+  .featuredCard:nth-of-type(2n+1) .featuredCard__image {
+    grid-column: 1 / -1;
+  }
+
+  .featuredCard__image{
+    max-width: 1000px;
+    max-height: 1000px;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / -1;
+    height: 100%;
+    opacity: 0.25;
   }
 }

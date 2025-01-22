@@ -54,3 +54,43 @@
 .footer__stats svg.feather {
   fill: none;
 }
+
+.footer__social{
+  display: none;
+}
+
+.footer__social-list {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.footer__social-link {
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition);
+  padding: 10px;
+}
+
+.footer__social-svg{
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer__social {
+    display: block;
+    width: 100%;
+    max-width: 270px;
+    margin: 0px auto 10px;
+    color: var(--light-slate);
+  }
+}

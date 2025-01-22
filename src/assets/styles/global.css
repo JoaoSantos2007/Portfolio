@@ -15,6 +15,7 @@
 	--nav-scroll-height: 70px;
 	--nav-scroll-color: #1e1e1e98;
 	--tab-height: 42px;
+	--tab-width: 120px;
 	--bg-color: #1e1e1e;
   --bg-color-light: #252526;
 	--theme: #aa1313;
@@ -67,4 +68,10 @@ html {
 
 *, ::before, ::after {
 	box-sizing: inherit;
+}
+
+@media (max-width: 480px) {
+	body {
+		font-size: var(--fz-lg);
+	}
 }
