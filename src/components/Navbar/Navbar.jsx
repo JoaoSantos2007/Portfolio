@@ -3,13 +3,14 @@ import { useState, useEffect } from "react";
 import Logo from "../Logo/Logo.jsx";
 import Button from "../Button/Button.jsx";
 import { Link, useNavigate } from "react-router-dom";
-import useSize from "../../hooks/useSize.jsx";
+import { ReactComponent as MenuIcon } from "../../assets/images/menu.svg";
+import { ReactComponent as CloseIcon } from "../../assets/images/close.svg";
+import PropTypes from "prop-types";
 
-const Navbar = () => {
+const Navbar = ({ menuMode, setMenuMode }) => {
   const [navbarClass, setNavbarClass] = useState("navbar");
   const [lastScrollY, setLastScrollY] = useState(0);
   const navigate = useNavigate();
-  const { width } = useSize();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,8 +19,8 @@ const Navbar = () => {
       if (currentScrollY === 0) {
         setNavbarClass("navbar"); // Classe padrão no topo da página
       } else if (currentScrollY > lastScrollY) {
-        setNavbarClass("navbar"); // Scroll para baixo
-      } else if (currentScrollY < lastScrollY) {
+        setNavbarClass("navbar navbar-hidden"); // Scroll para baixo
+      } else if (currentScrollY < lastScrollY && !menuMode) {
         setNavbarClass("navbar navbar-scrolled"); // Scroll para cima
       }
 
@@ -42,14 +43,11 @@ const Navbar = () => {
 
   const handleNavigation = (section) => {
     navigate("/");
+    setMenuMode(false);
     setTimeout(() => {
       document.getElementById(section)?.scrollIntoView({ behavior: "smooth" });
     }, 0);
   };
-
-  if (width <= 768) {
-    return;
-  }
 
   return (
     <header className={navbarClass}>
@@ -77,9 +75,49 @@ const Navbar = () => {
 
           <Button text="Resume" href="/resume.pdf" rel="noopener noreferrer" />
         </div>
+
+        <div className="navbar__menu">
+          <aside
+            className={`navbar__aside ${menuMode ? "navbar__aside-active" : ""}`}
+          >
+            <nav className="navbar__aside-content">
+              <ol className="navbar__aside-list">
+                {links.map((link, index) => (
+                  <li className="navbar__aside-item" key={link.id}>
+                    <p
+                      className="navbar__aside-link"
+                      onClick={() => handleNavigation(link.section)}
+                      style={{ transitionDelay: `${index * 10}ms` }}
+                    >
+                      {link.name}
+                    </p>
+                  </li>
+                ))}
+              </ol>
+
+              <Button
+                text="Resume"
+                href="/resume.pdf"
+                rel="noopener noreferrer"
+              />
+            </nav>
+          </aside>
+
+          <button
+            aria-label="Menu"
+            className="navbar__menu-btn"
+            onClick={() => setMenuMode((prev) => !prev)}
+          >
+            {!menuMode ? <MenuIcon /> : <CloseIcon />}
+          </button>
+        </div>
       </nav>
     </header>
   );
+};
+Navbar.propTypes = {
+  menuMode: PropTypes.bool.isRequired,
+  setMenuMode: PropTypes.func.isRequired,
 };
 
 export default Navbar;

@@ -1,10 +1,11 @@
 import TableElement from "../../components/TableElement/TableElement.jsx";
 import courses from "../../assets/docs/courses.json";
 import "./Achievements.css";
+import PropTypes from "prop-types";
 
-const Achievements = () => {
+const Achievements = ({ menuMode }) => {
   return (
-    <main className="achievements">
+    <main className={`achievements ${menuMode ? "main-disabled" : ""}`}>
       <h1 className="achievements__title">Achievements</h1>
       <p className="achievements__subtitle">
         A big list of things I’ve worked on
@@ -13,10 +14,10 @@ const Achievements = () => {
       <table className="achievements__table">
         <thead>
           <tr>
-            <th>Year</th>
-            <th>Title</th>
-            <th>School</th>
-            <th>Link</th>
+            <th className="achievements__table-year">Year</th>
+            <th className="achievements__table-title">Title</th>
+            <th className="achievements__table-school">School</th>
+            <th className="achievements__table-link">Link</th>
           </tr>
         </thead>
         <tbody>
@@ -35,6 +36,9 @@ const Achievements = () => {
       </table>
     </main>
   );
+};
+Achievements.propTypes = {
+  menuMode: PropTypes.bool.isRequired,
 };
 
 export default Achievements;

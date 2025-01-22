@@ -25,7 +25,8 @@
 }
 
 .TableElement__links{
-  min-width: 100px;
+  max-width: 100px;
+  display: block;
 }
 
 .TableElement__externalLink{
@@ -40,4 +41,10 @@
 .TableElement__externalLink svg{
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 480px) {
+  .TableElement__school {
+    display: none;
+  }
 }
