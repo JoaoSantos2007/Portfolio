@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import Logo from "../Logo/Logo.jsx";
 import Button from "../Button/Button.jsx";
 import { Link, useNavigate } from "react-router-dom";
-import { ReactComponent as MenuIcon } from "../../assets/images/menu.svg";
-import { ReactComponent as CloseIcon } from "../../assets/images/close.svg";
+import MenuIcon from "../../icons/MenuIcon.jsx";
+import CloseIcon from "../../icons/CloseIcon.jsx";
 import PropTypes from "prop-types";
 
 const Navbar = ({ menuMode, setMenuMode }) => {

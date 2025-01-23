@@ -1,10 +1,11 @@
 import "./Footer.css";
-import { ReactComponent as FavoriteIcon } from "../../assets/images/favorite.svg";
-import { ReactComponent as BranchIcon } from "../../assets/images/branch.svg";
-import { ReactComponent as GitHubIcon } from "../../assets/images/github.svg";
-import { ReactComponent as InstagramIcon } from "../../assets/images/instagram.svg";
-import { ReactComponent as AluraIcon } from "../../assets/images/alura.svg";
-import { ReactComponent as LinkedinIcon } from "../../assets/images/linkedin.svg";
+
+import FavoriteIcon from "../../icons/FavoriteIcon.jsx";
+import BranchIcon from "../../icons/BranchIcon.jsx";
+import GithubIcon from "../../icons/GithubIcon.jsx";
+import InstagramIcon from "../../icons/InstagramIcon.jsx";
+import AluraIcon from "../../icons/AluraIcon.jsx";
+import LinkedinIcon from "../../icons/LinkedinIcon.jsx";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <GitHubIcon className="footer__social-svg" />
+              <GithubIcon className="footer__social-svg" />
             </a>
           </li>
           <li className="footer__social-element">

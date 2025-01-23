@@ -1,4 +1,5 @@
 import "./ExperiencePanel.css";
+import Button from "../Button/Button.jsx";
 import PropTypes from "prop-types";
 
 const ExperiencePanel = ({ experience, index }) => {
@@ -36,6 +37,9 @@ const ExperiencePanel = ({ experience, index }) => {
             </li>
           ))}
         </ul>
+      </div>
+      <div className="experiencePanel__button">
+        <Button text="Visit" href={experience.link} />
       </div>
     </div>
   );

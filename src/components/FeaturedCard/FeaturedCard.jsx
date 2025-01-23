@@ -1,6 +1,6 @@
 import "./FeaturedCard.css";
-import { ReactComponent as GitHubIcon } from "../../assets/images/github.svg";
-import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg";
+import GithubIcon from "../../icons/GithubIcon.jsx";
+import ExternalIcon from "../../icons/ExternalIcon.jsx";
 import ImageOverlay from "../../animations/ImageOverlay/ImageOverlay";
 import PropTypes from "prop-types";
 
@@ -38,7 +38,7 @@ const FeaturedCard = ({ project, index }) => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <GitHubIcon />
+            <GithubIcon />
           </a>
           <a
             href={project.externalLink}

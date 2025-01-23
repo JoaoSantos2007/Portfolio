@@ -1,5 +1,5 @@
 import "./TableElement.css";
-import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg";
+import ExternalIcon from "../../icons/ExternalIcon.jsx";
 
 import PropTypes from "prop-types";
 

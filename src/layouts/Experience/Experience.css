@@ -23,10 +23,15 @@
 
 @media (max-width: 600px) {
   .experience__inner {
-      display: block;
+    display: block;
+    padding: 0px;
   }
 
   .experience{
     padding: 60px 0px;
+  }
+
+  .experience__texts{
+    margin-left: 0px;
   }
 }

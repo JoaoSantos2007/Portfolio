@@ -1,7 +1,8 @@
 import "./ProjectCard.css";
-import { ReactComponent as FolderIcon } from "../../assets/images/folder.svg";
-import { ReactComponent as ExternalIcon } from "../../assets/images/external.svg";
-import { ReactComponent as GitHubIcon } from "../../assets/images/github.svg";
+
+import FolderIcon from "../../icons/FolderIcon.jsx";
+import ExternalIcon from "../../icons/ExternalIcon.jsx";
+import GithubIcon from "../../icons/GithubIcon.jsx";
 import PropTypes from "prop-types";
 
 const ProjectCard = ({ project, index }) => {
@@ -21,7 +22,7 @@ const ProjectCard = ({ project, index }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GitHubIcon className="projectCard__link" />
+                  <GithubIcon className="projectCard__link" />
                 </a>
               )}
               {project.externalLink && (

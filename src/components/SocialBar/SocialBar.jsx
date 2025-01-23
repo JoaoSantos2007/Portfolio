@@ -1,8 +1,8 @@
 import "./SocialBar.css";
-import { ReactComponent as GitHubIcon } from "../../assets/images/github.svg";
-import { ReactComponent as InstagramIcon } from "../../assets/images/instagram.svg";
-import { ReactComponent as AluraIcon } from "../../assets/images/alura.svg";
-import { ReactComponent as LinkedinIcon } from "../../assets/images/linkedin.svg";
+import GithubIcon from "../../icons/GithubIcon.jsx";
+import InstagramIcon from "../../icons/InstagramIcon.jsx";
+import AluraIcon from "../../icons/AluraIcon.jsx";
+import LinkedinIcon from "../../icons/LinkedinIcon.jsx";
 
 const SocialBar = () => {
   return (
@@ -16,7 +16,7 @@ const SocialBar = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <GitHubIcon className="socialBar__svg" />
+            <GithubIcon className="socialBar__svg" />
           </a>
         </li>
         <li className="socialBar__element">
