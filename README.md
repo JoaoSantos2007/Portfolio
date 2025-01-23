@@ -8,7 +8,6 @@ Este repositório contém o código-fonte do meu portfólio desenvolvido em Reac
 - **HTML5 e CSS3**: Estrutura e estilização da aplicação.
 - **JavaScript (ES6+)**: Lógica e funcionalidades dinâmicas.
 - **React Router**: Navegação entre as diferentes seções do portfólio.
-- **Vite**: Ferramenta para desenvolvimento e build rápido.
 
 ## Estrutura do Projeto
 
@@ -16,11 +15,12 @@ A estrutura principal do projeto está organizada da seguinte forma:
 
 ```
 /src
+  |-- /animations     # Componentes Animados
   |-- /assets         # Imagens e arquivos estáticos
   |-- /components     # Componentes reutilizáveis
-  |-- /layouts        # Seções principais do portfólio (Hero, Experience, About, Works, etc.)
+  |-- /hooks          # Custom Hooks
   |-- /icons          # Icones do site
-  |-- /utils          # Funções auxiliares e constantes
+  |-- /layouts        # Seções principais do portfólio (Hero, Experience, About, Projects, etc.)
   |-- App.jsx         # Componente raiz
   |-- index.js        # Ponto de entrada do projeto
 ```
